@@ -1,0 +1,12 @@
+version: '3'
+  backend:
+    container_name: "spring-rest-apis"
+    restart: always
+    image: haritkumar/spring-rest-apis:latest
+    ports:
+    - 5000:5000
+  frontend:
+    container_name: "angular-frontend"
+    image: haritkumar/angular-frontend:latest
+    ports:
+    - 4200:80
