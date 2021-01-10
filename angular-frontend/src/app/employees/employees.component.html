@@ -1,0 +1,33 @@
+<app-menu></app-menu>
+
+
+
+
+<div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-10 text-center pt-5">
+            <h2>Employees List</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Salary</th>
+                        <th>Date of Joining</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let employee of employees">
+                        <td>{{employee.firstName}} {{employee.lastName}}</td>
+                        <td>{{employee.department.deptName}}</td>
+                        <td>{{employee.salary}}</td>
+                        <td>{{employee.dateOfJoining}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="/home">Home</a>
+        </div>
+    </div>
+</div>
+
+

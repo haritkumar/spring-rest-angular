@@ -1,0 +1,60 @@
+<app-menu></app-menu>
+
+
+
+
+<div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-6 text-left pt-5">
+            <h2>Add Employee</h2>
+
+            <div [hidden]="submitted">
+                <form (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label for="name">First Name</label>
+                        <input type="text" class="form-control" id="firstName" required [(ngModel)]="employee.firstName"
+                            name="firstName">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="name">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" required [(ngModel)]="employee.lastName"
+                            name="lastName">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Date of Joining</label>
+                        <input type="text" class="form-control" id="dateOfJoining" required [(ngModel)]="employee.dateOfJoining" name="dateOfJoining">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="name">Salary</label>
+                        <input type="number" class="form-control" id="salary" required [(ngModel)]="employee.salary"
+                            name="salary">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Department</label>
+                        <select class="form-control" id="dept" required [(ngModel)]="employee.dept"
+                            name="dept">
+                            <option value="1">Account</option>
+                            <option value="2">HR</option>
+                            <option value="3">IT</option>
+                        </select>    
+                    </div>
+            
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+            </div>
+            
+            <div [hidden]="!submitted">
+                <h4>You submitted successfully!</h4>
+            </div>
+
+            <br /><br />
+            <a href="/employees-list">Employees List</a><br /><br />
+            <a href="/home">Home</a>
+        </div>
+    </div>
+</div>
+

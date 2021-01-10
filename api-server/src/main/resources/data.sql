@@ -1,0 +1,24 @@
+INSERT IGNORE INTO department VALUES(1,'Account');
+INSERT IGNORE INTO department VALUES(2,'HR');
+INSERT IGNORE INTO department VALUES(3,'IT');
+
+INSERT IGNORE INTO employees VALUES(1,'2018-10-20','Harit','Kumar','2900000',3);
+INSERT IGNORE INTO employees VALUES(2,'2019-11-22','John','Cooper','900000',1);
+INSERT IGNORE INTO employees VALUES(3,'2018-10-20','Sachin','Sharma','200000',2);
+INSERT IGNORE INTO employees VALUES(4,'2020-1-20','Amul','Singh','1900000',3);
+INSERT IGNORE INTO employees VALUES(5,'2017-12-2','Kunti','Devi','7800000',3);
+INSERT IGNORE INTO employees VALUES(6,'2014-11-13','Ambuj','Lal','900000',1);
+INSERT IGNORE INTO employees VALUES(7,'2018-11-20','Chandan','Kumar','4500000',2);
+INSERT IGNORE INTO employees VALUES(8,'2019-4-21','Ankit','Hada','2200000',3);
+INSERT IGNORE INTO employees VALUES(9,'2018-6-10','Rohit','Dikshit','7600000',2);
+INSERT IGNORE INTO employees VALUES(10,'2013-7-22','Lalit','Jha','9900000',1);
+INSERT IGNORE INTO employees VALUES(11,'2018-11-26','Monty','Kaur','100000',3);
+INSERT IGNORE INTO employees VALUES(12,'2012-12-18','Anuu','Singh','1500000',3);
+INSERT IGNORE INTO employees VALUES(13,'2011-10-12','Asha','Gupta','1100000',1);
+INSERT IGNORE INTO employees VALUES(14,'2014-9-16','Jayanti','Bisth','1300000',2);
+INSERT IGNORE INTO employees VALUES(15,'2015-7-27','Anurag','Khosla','4200000',3);
+INSERT IGNORE INTO employees VALUES(16,'2019-9-23','Bittu','Pandey','7600000',3);
+INSERT IGNORE INTO employees VALUES(17,'2011-10-5','Pankaj','Tripathi','9700000',1);
+INSERT IGNORE INTO employees VALUES(18,'2010-11-2','Amit','Aggarwal','1100000',3);
+INSERT IGNORE INTO employees VALUES(19,'2009-12-4','Joe','Paul','6500000',3);
+INSERT IGNORE INTO employees VALUES(20,'2015-11-9','Stalin','Yeddaruppu','8600000',2);
