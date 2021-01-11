@@ -13,6 +13,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { EmployeesComponent } from './employees/employees.component';
 import { AddempComponent } from './addemp/addemp.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { AccessGuard} from './access-gaurd';
+import { LoginGuard } from './login-gaurd';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { NotfoundComponent } from './notfound/notfound.component';
       provide: HTTP_INTERCEPTORS,
       useClass: HttpInterceptorService,
       multi: true
-    }
+    },
+    AccessGuard,
+    LoginGuard
   ],
   bootstrap: [AppComponent]
 })
