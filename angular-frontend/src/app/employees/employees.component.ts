@@ -18,5 +18,12 @@ export class EmployeesComponent implements OnInit {
     });
   }
 
+  searchEmployees(searchToken) {
+    console.log('Search token: ' + searchToken);
+    this.http.get<any>('http://localhost:5000/api/v1/employees/' + searchToken).subscribe(data => {
+      this.employees = data;
+      console.log(this.employees);
+    });
+  }
 
 }
