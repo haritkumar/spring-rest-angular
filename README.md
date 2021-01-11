@@ -14,6 +14,19 @@ docker-compose up
 - APIs Server
 `http://localhost:5000/`
 
+- Swagger UI
+`http://localhost:5000/swagger-ui.html`
+
+- H2 DB Console
+`http://localhost:5000/h2-console/`
+
+```properties
+#DB connection
+url=jdbc:h2:mem:employeedb;MODE=MYSQL
+username=sa
+password=
+```
+
 Use `admin/admin` to sign in
 
 ### Employee create payload
