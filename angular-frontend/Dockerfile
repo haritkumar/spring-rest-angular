@@ -1,16 +1,5 @@
-FROM node:13.3.0 AS compile-image
-
-RUN npm install -g yarn
-
-WORKDIR /opt/ng
-COPY angular-frontend/package.json ./
-RUN yarn install
-
-ENV PATH="./node_modules/.bin:$PATH" 
-
-COPY . ./
-RUN ng build --prod
-
 FROM nginx
-COPY docker/nginx/default.conf /etc/nginx/conf.d/default.conf
-COPY --from=compile-image /opt/ng/dist/app-name /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY ./dist/angular-frontend /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
