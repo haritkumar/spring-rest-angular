@@ -10,7 +10,7 @@ import { LoginGuard } from './login-gaurd';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent, canActivate: [LoginGuard]},
-  { path: '', component: LoginComponent},
+  { path: '', component: LoginComponent, canActivate: [LoginGuard]},
   { path: 'home', component: HomeComponent, data: { requiresLogin: true }, canActivate: [AccessGuard]},
   { path: 'logout', component: LoginComponent},
   { path: 'employees-list', component: EmployeesComponent, data: { requiresLogin: true }, canActivate: [AccessGuard] },
