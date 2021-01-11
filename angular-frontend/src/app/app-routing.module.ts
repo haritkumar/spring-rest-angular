@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { AddempComponent } from './addemp/addemp.component';
+import { NotfoundComponent} from './notfound/notfound.component';
+
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: '', component: LoginComponent},
@@ -11,6 +13,7 @@ const routes: Routes = [
   {path: 'logout', component: LoginComponent},
   { path: 'employees-list', component: EmployeesComponent },
   { path: 'add-employee', component: AddempComponent },
+  { path: '**', component: NotfoundComponent },
 ];
 
 @NgModule({

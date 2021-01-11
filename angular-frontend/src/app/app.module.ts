@@ -8,11 +8,11 @@ import { MenuComponent } from './menu/menu.component';
 import { LoginComponent } from './login/login.component';
 
 import { FormsModule } from '@angular/forms';
-import { LogoutComponent } from './logout/logout.component';
 import { HttpInterceptorService } from './httpInterceptor.service';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { EmployeesComponent } from './employees/employees.component';
 import { AddempComponent } from './addemp/addemp.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +20,9 @@ import { AddempComponent } from './addemp/addemp.component';
     HomeComponent,
     MenuComponent,
     LoginComponent,
-    LogoutComponent,
     EmployeesComponent,
-    AddempComponent
+    AddempComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
